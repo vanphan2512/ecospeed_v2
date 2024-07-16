@@ -2262,7 +2262,7 @@ html[xmlns] .slides {
 
 /* Direction Nav */
 .flex-direction-nav {
-	*height: 0;
+	height: 0;
 }
 
 .flex-direction-nav a {
@@ -2368,7 +2368,7 @@ html[xmlns] .slides {
 }
 
 .flex-control-nav li {
-	*display: inline;
+	display: inline;
 	display: inline-block;
 	text-align: center;
 	zoom: 1;
@@ -9909,9 +9909,14 @@ body.boxed {
 }
 
 /* dark background section - .ds.ms */
+.item-steps .ds.ms {
+	background-color: #f2c014bd;
+}
+
 .ds.ms {
 	background-color: #303849;
 }
+
 
 .ds.ms .muted-bg,
 .ds.ms .hero-bg {
@@ -10141,7 +10146,7 @@ body.boxed {
 .ds select,
 .ds .form-control {
 	background-color: transparent;
-	border: 1px solid rgba(255, 255, 255, 0.1);
+	border:1px solid #ffffff73;
 	box-shadow: none;
 	color: #fff;
 }
@@ -15689,6 +15694,14 @@ filters
 	background-image: url("../img/parallax/service-bg.jpg");
 }
 
+.service-bg.s-overlay.ds.bs:before{
+	background-color: #f2c01461;
+}
+
+.testimonials.s-overlay.ds.bs:before{
+	background-color: #f3f3f354;
+}
+
 .service-bg2 {
 	background-image: url("../img/parallax/service-bg2.jpg");
 }
@@ -16020,12 +16033,12 @@ filters
 		margin-top: -130px;
 	}
 
-	.steps2 .container {
+	/* .steps2 .container {
 		background-image: url(../img/background-texture.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-	}
+	} */
 }
 
 @media (max-width: 767px) {
@@ -16040,6 +16053,9 @@ filters
 	letter-spacing: 0.1em;
 	margin-bottom: 15px;
 	text-transform: uppercase;
+}
+.steps2 .step p.step-title.color-main{
+	color: #656971;
 }
 
 .steps2 .step p.step-title:before {
@@ -16057,7 +16073,7 @@ filters
 }
 
 .steps2 .step p.step-title:after {
-	background-color: #ffc107;
+	background-color: #fff;
 	content: "";
 	display: block;
 	height: 1px;
@@ -16092,7 +16108,7 @@ filters
 }
 
 .item-steps .step-part:before {
-	color: #ffc107;
+	color: #fff;
 	content: "0" counter(step);
 	counter-increment: step;
 	font-family: "Anton", sans-serif;
@@ -16100,7 +16116,7 @@ filters
 	font-weight: 100;
 	left: -20px;
 	letter-spacing: 3px;
-	opacity: 0.3;
+	opacity: 0.5;
 	position: absolute;
 	top: -22px;
 	transition: .5s all;
@@ -19585,7 +19601,7 @@ a img.aligncenter {
 	}
 
 	.sf-menu li {
-		*white-space: normal;
+		white-space: normal;
 		white-space: nowrap;
 	}
 
@@ -20370,6 +20386,9 @@ a img.aligncenter {
 .page_topline ul {
 	margin: 0;
 	padding: 0;
+}
+.page_topline ul li i.color-main{
+	color: #f2c014;
 }
 
 .page_topline .dropdown-language a > img {
