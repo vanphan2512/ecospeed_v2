@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <title>CÔNG TY TNHH ECOSPEED VIỆT NAM</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+    <link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+
+<body>
+
+
+    <div class="preloader">
+        <div class="preloader_image"></div>
+    </div>
+
+    <!-- search modal -->
+    <div class="modal fade modal-search" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="widget widget_search">
+                    <form method="get" class="searchform search-form" action="/">
+                        <div class="form-group">
+                            <input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+                                id="modal-search-input">
+                        </div>
+                        <button type="submit" class="btn">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+        <div class="fw-messages-wrap ls p-normal">
+            <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+            <!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+        </div>
+    </div><!-- eof .modal -->
+
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="modalLoginForm"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="modal-header justify-content-center">
+                        <h4 class="modal-title">Sign In</h4>
+                    </div>
+                    <form action="/">
+                        <div class="form-group has-placeholder">
+                            <label for="name-sigin">Your Name:</label>
+                            <input type="text" class="form-control" id="name-sigin" placeholder="Name"
+                                name="First name">
+                        </div>
+                        <div class="form-group has-placeholder">
+                            <label for="sigpassword">Password:</label>
+                            <input type="password" class="form-control" id="sigpassword" placeholder="password"
+                                name="sigpassword">
+                        </div>
+                        <div class="modal-password">
+                            <a href="#" class="modal-password-btn">Forgot password?</a>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="submit" class="btn btn-small btn-wide btn-maincolor log-btn">Log in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-image item-media cover-image s-cover-right d-none d-md-block">
+                    <img src="img/register-side.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="canvas">
+        <div id="box_wrapper">
+            <div class="header_absolute ds ms s-overlay">
+                <!--topline section-->
+                <section class="page_topline with-cart s-pt-10 s-pb-3 s-py-xl-0 topline-overflow-visible ds ms">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-md-left text-center">
+                                <ul class="top-includes border-divided">
+                                    <li>
+                                        <i class="color-main ico ico-map-marker fs-14 mr-2"></i>
+                                        Số 9D7, KĐT mới Đại Kim, P.Đại Kim, Q.Hoàng Mai, TP.Hà Nội
+                                    </li>
+                                    <li class="d-block d-xl-inline-block meta-email">
+                                        <a href="mailto:contact@ecospeed.vn">
+                                            <i class="color-main ico ico-envelope-alt fs-14 mr-2"></i>
+                                            contact@ecospeed.vn
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 text-md-right text-center">
+                                <ul class="top-includes border-divided">
+                                    <li class="d-block d-xl-inline-block">
+                                        <div class="meta-phone">
+                                            <a href="callto:024-3858-2525">
+                                                <i class="ico ico-phone color-main fs-14 pr-2"></i>024-3858-2525
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="search_modal_button">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <div class="dropdown dropdown-card">
+                                            <a class="dropdown-toggle dropdown-shopping-cart" href="#" role="button"
+                                                id="dropdown-shopping-cart" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="ico ico-shopping-bag"></i>
+                                                <span class="badge bg-maincolor">2</span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-cart ls"
+                                                aria-labelledby="dropdown-shopping-cart">
+                                                <div class="widget woocommerce widget_shopping_cart">
+                                                    <div class="widget_shopping_cart_content">
+
+                                                        <ul class="product_list_widget">
+                                                            <li>
+                                                                <a href="product-detail.html">
+                                                                    <img src="images/products/5.jpg" alt="">
+                                                                    <span class="product-title">Van điều tiết Eco</span>
+                                                                </a>
+                                                                <div class="d-flex justify-content-between shop-item">
+                                                                    <p class="shop-desk">Van</p>
+                                                                    <a href="#" class="remove"
+                                                                        aria-label="Remove this item"
+                                                                        data-product_id="73" data-product_sku=""><i
+                                                                            class="fs-14 ico-trash color-main2"></i></a>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="woocommerce-Price-amount amount">
+                                                                        <span
+                                                                            class="woocommerce-Price-currencySymbol">$</span>55<sup>00</sup>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <a href="product-detail.html">
+                                                                    <img src="images/products/2.jpg" alt="">
+                                                                    <span class="product-title">Đồng hồ điều áp khí Oxy
+                                                                        SSB-OXE</span>
+                                                                </a>
+                                                                <div class="d-flex justify-content-between shop-item">
+                                                                    <p class="shop-desk">Đồng hồ</p>
+                                                                    <a href="#" class="remove"
+                                                                        aria-label="Remove this item"
+                                                                        data-product_id="73" data-product_sku=""><i
+                                                                            class="fs-14 ico-trash color-main2"></i></a>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="woocommerce-Price-amount amount">
+                                                                        <span
+                                                                            class="woocommerce-Price-currencySymbol">$</span>55<sup>00</sup>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+
+                                                        <p class="woocommerce-mini-cart__total total">
+                                                            Tổng:
+                                                            <span class="woocommerce-Price-amount amount fw-500">
+                                                                <span class="woocommerce-Price-currencySymbol">$</span>
+                                                                110.00
+                                                            </span>
+                                                        </p>
+
+                                                        <p class="woocommerce-mini-cart__buttons buttons">
+                                                            <a href="shop-cart.html"
+                                                                class="btn btn-small btn-maincolor button wc-forward">giỏ
+                                                                hàng</a>
+                                                            <a href="shop-checkout.html"
+                                                                class="btn btn-small btn-outline-maincolor button checkout wc-forward">Thanh
+                                                                toán</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="#modalLoginForm"><i
+                                                class="fa fa-user"></i></a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="social-icons">
+                                            <a href="https://www.facebook.com/profile.php?id=100048729954906"
+                                                class="fa fa-facebook " title="facebook"></a>
+                                            <a href="https://www.youtube.com/watch?v=iAF2ynN9gzg&t=5s"
+                                                class="fa fa-youtube-play " title="youtube-play"></a>
+                                            <a href="https://www.youtube.com/watch?v=FT7VaJCNJJA&t=6s"
+                                                class="fa fa-twitter " title="twitter"></a>
+                                            <a href="https://linkedin.com/" class="fa fa-linkedin "
+                                                title="linkedin"></a>
+                                            <a href="https://instagram.com/" class="fa fa-instagram "
+                                                title="instagram"></a>
+                                        </span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--eof topline-->
+                <header class="page_header main_header s-py-md-0 ds ms justify-nav-end s-bordertop">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-5 col-11">
+                                <a href="./" class="logo">
+                                    <img src="images/logo5.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-7 col-1">
+                                <div class="nav-wrap">
+
+                                    <!-- main nav start -->
+                                    <nav class="top-nav">
+                                        <ul class="nav sf-menu">
+                                            <li class="active">
+                                                <a href="index.html">Trang chủ</a>
+                                            </li>
+
+                                            <!-- about -->
+                                            <li>
+                                                <a href="about.html">Giới thiệu</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="about.html">Tổng quan về công ty</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="tam-nhin-su-menh.html">Tầm nhìn, sứ mệnh</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="gia-tri-cot-loi.html">Giá trị cốt lõi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="cong-nghe-han-escospeed.html">Công nghệ hàn
+                                                            Ecospeed</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- eof about -->
+
+                                            <!-- Dự án -->
+                                            <li>
+                                                <a href="project.html">Dự án</a>
+                                            </li>
+                                            <!-- eof Dự án -->
+
+                                            <!-- Sản phẩm -->
+                                            <li>
+                                                <a href="products.html">Sản phẩm</a>
+                                            </li>
+                                            <!-- eof Sản phẩm -->
+
+                                            <!-- Bài viết -->
+                                            <li>
+                                                <a href="posts.html">Bài viết</a>
+                                            </li>
+                                            <!-- eof Bài viết -->
+
+                                            <!-- Bài viết -->
+                                            <li>
+                                                <a href="contact.html">Liên hệ</a>
+                                            </li>
+                                            <!-- eof Bài viết -->
+
+                                        </ul>
+
+
+                                    </nav>
+                                    <!-- eof main nav -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header toggler -->
+                    <span class="toggle_menu"><span></span></span>
+                </header>
+
+                <section
+                    class="page_title ds ms s-pt-120 s-pb-50 s-pt-lg-150 s-pb-lg-90 page_title s-parallax s-overlay bg-size-auto">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-12 text-center text-lg-left">
+                                <h1>Máy cắt thép vuông góc SDC -32D</h1>
+                                <ol class=" breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="./">Trang chủ</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="products.html">Sản phẩm</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">
+                                        Máy cắt thép vuông góc SDC -32D
+                                    </li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+
+            <section class="ls s-pt-60 s-pb-70 s-py-lg-100 s-py-xl-150 c-gutter-30">
+                <div class="container">
+                    <div class="row">
+                        <main class="col-lg-7 col-xl-9 order-lg-2">
+                            <div class="product">
+                                <div class="images" data-columns="5">
+                                    <figure>
+                                        <div data-thumb="images/products/11.jpg">
+                                            <a href="images/products/11.jpg">
+                                                <img src="images/products/11.jpg" alt="" data-caption=""
+                                                    data-src="images/products/11.jpg"
+                                                    data-large_image="images/products/11.jpg"
+                                                    data-large_image_width="1000" data-large_image_height="1000">
+                                            </a>
+                                        </div>
+                                        <div data-thumb="images/products/11.jpg">
+                                            <a href="images/products/11.jpg">
+                                                <img src="images/products/11.jpg" alt="" data-caption=""
+                                                    data-src="images/products/11.jpg"
+                                                    data-large_image="images/products/11.jpg"
+                                                    data-large_image_width="1000" data-large_image_height="1000">
+                                            </a>
+                                        </div>
+                                    </figure>
+                                </div>
+
+                                <div class="summary entry-summary">
+                                    <h6 class="product_title single_title text-normal">Máy cắt thép vuông góc SDC -32D
+                                    </h6>
+                                    <div class="woocommerce-product-rating">
+                                        <div class="star-rating">
+                                            <span style="width:72.6%">Rated <strong class="rating">4.33</strong> out of
+                                                5 based on <span class="rating">3</span> customer ratings</span>
+                                        </div>
+                                    </div>
+                                    <form>
+                                        <div class="single_variation_wrap">
+                                            <div class="d-flex align-items-center">
+                                                <div class="quantity single">
+                                                    <input type="button" value="+" class="plus">
+                                                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                                                    <input type="number" class="input-text qty text" step="1" min="1"
+                                                        max="1000" name="quantity" value="1" title="Qty" size="4">
+                                                    <input type="button" value="-" class="minus">
+                                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                                </div>
+                                                <span class="price">
+                                                    <del>
+                                                        <span>
+                                                            <span>$ </span>70.00
+                                                        </span>
+                                                    </del>
+                                                    <span>$</span>55.00
+                                                </span>
+                                            </div>
+                                            <button type="submit"
+                                                class="single_add_to_cart_button btn alt btn-small btn-wide btn-maincolor"><span>Thêm
+                                                    giỏ hàng</span></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- .summary -->
+
+
+                                <div class="woocommerce-tabs wc-tabs-wrapper">
+                                    <ul class="tabs wc-tabs" role="tablist">
+                                        <li class="description_tab" id="tab-title-description" role="tab"
+                                            aria-controls="tab-description">
+                                            <a href="#tab-description">Thông tin sản phẩm</a>
+                                        </li>
+                                        <li class="reviews_tab" id="tab-title-reviews" role="tab"
+                                            aria-controls="tab-reviews">
+                                            <a href="#tab-reviews">Thông số kỹ thuật</a>
+                                        </li>
+                                    </ul>
+
+                                    <div class="panel wc-tab" id="tab-description" role="tabpanel"
+                                        aria-labelledby="tab-title-description">
+                                        <h6>Máy cắt thép vuông góc</h6>
+                                        <p>Là thiết bị dùng để cắt hai đầu của thanh thép cốt bê tông, được gắn lưỡi cắt
+                                            bằng hợp kim siêu cứng nên dễ dàng cắt đứt và tạo mặt phẳng cần thiết cho bề
+                                            mặt hàn của thép cốt trước khi thi công công nghệ hàn EcoSpeed.</p>
+                                        <p>-Máy cắt thép vuông góc mang ký hiệu SDC – D32 sử dụng để cắt thép cốt bê
+                                            tông có đường kính từ D20 – D32. </p>
+                                    </div>
+                                    <div class="panel wc-tab" id="tab-reviews" role="tabpanel"
+                                        aria-labelledby="tab-title-reviews">
+                                        <div id="reviews">
+                                            <div id="comments">
+                                                <ol class="commentlist">
+                                                    <li class="comment even thread-even depth-1" id="li-comment-34">
+
+                                                        <div id="comment-34" class="comment_container">
+
+                                                            <img alt="" src="images/blog/comment01.jpg">
+                                                            <div class="comment-text">
+
+                                                                <div class="star-rating">
+                                                                    <span style="width:80%">Rated <strong
+                                                                            class="rating">4</strong> out of 5</span>
+                                                                </div>
+                                                                <p class="meta">
+                                                                    <strong>Nguyễn Văn A</strong> <span>–</span>
+                                                                    <time datetime="2013-06-07T11:55:15+00:00">July 15,
+                                                                        2024</time>
+                                                                </p>
+
+                                                                <div class="description">
+                                                                    <p>Sản phẩm tốt</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!-- #comment-## -->
+                                                    <li class="comment odd alt thread-odd thread-alt depth-1"
+                                                        id="li-comment-35">
+
+                                                        <div id="comment-35" class="comment_container">
+
+                                                            <img alt="" src="images/blog/comment02.jpg">
+                                                            <div class="comment-text">
+
+                                                                <div class="star-rating">
+                                                                    <span style="width:80%">Rated <strong
+                                                                            class="rating">4</strong> out of 5</span>
+                                                                </div>
+                                                                <p class="meta">
+                                                                    <strong>Nguyễn Văn A</strong> <span>–</span>
+                                                                    <time datetime="2013-06-07T11:55:15+00:00">July 15,
+                                                                        2024</time>
+                                                                </p>
+
+                                                                <div class="description">
+                                                                    <p>Sản phẩm tốt</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!-- #comment-## -->
+                                                    <li class="comment even thread-even depth-1" id="li-comment-36">
+
+                                                        <div id="comment-36" class="comment_container">
+
+                                                            <img alt="" src="images/blog/comment03.jpg">
+                                                            <div class="comment-text">
+
+                                                                <div class="star-rating">
+                                                                    <span style="width:100%">Rated <strong
+                                                                            class="rating">5</strong> out of 5</span>
+                                                                </div>
+                                                                <p class="meta">
+                                                                    <strong>Nguyễn Văn A</strong> <span>–</span>
+                                                                    <time datetime="2013-06-07T11:55:15+00:00">July 15,
+                                                                        2024</time>
+                                                                </p>
+
+                                                                <div class="description">
+                                                                    <p>Sản phẩm tốt</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <!-- #comment-## -->
+                                                </ol>
+
+
+                                            </div>
+
+
+                                            <div id="review_form_wrapper">
+                                                <div id="review_form">
+                                                    <div id="respond" class="comment-respond">
+                                                        <h4 id="reply-title" class="comment-reply-title">Đánh giá sản
+                                                            phẩm
+                                                            <small>
+                                                                <a rel="nofollow" id="cancel-comment-reply-link"
+                                                                    href="#respond" style="display:none;">Cancel
+                                                                    reply</a>
+                                                            </small>
+                                                        </h4>
+                                                        <form action="/" method="post" id="commentform"
+                                                            class="comment-form" novalidate="">
+                                                            <div class="comment-form-rating">
+                                                                <p class="stars">
+                                                                    <span>
+                                                                        <a class="star-1" href="#">1</a>
+                                                                        <a class="star-2" href="#">2</a>
+                                                                        <a class="star-3" href="#">3</a>
+                                                                        <a class="star-4" href="#">4</a>
+                                                                        <a class="star-5" href="#">5</a>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                            <p class="comment-form-comment">
+                                                                <textarea aria-required="true" rows="6" cols="45"
+                                                                    name="comment" id="comment" class="form-control"
+                                                                    placeholder="Thông tin đánh giá"></textarea>
+                                                            </p>
+                                                            <p class="comment-form-author">
+                                                                <input class="form-control" id="author" name="author"
+                                                                    type="text" value="" size="30" aria-required="true"
+                                                                    required="" placeholder="Họ tên">
+                                                            </p>
+                                                            <p class="comment-form-email">
+                                                                <input class="form-control" id="email" name="email"
+                                                                    type="email" value="" size="30" aria-required="true"
+                                                                    required="" placeholder="E-mail ">
+                                                            </p>
+                                                            <p class="form-submit">
+                                                                <button type="submit" id="submit" name="submit"
+                                                                    class="btn btn-maincolor"><span>Gửi</span></button>
+                                                            </p>
+                                                        </form>
+                                                    </div>
+                                                    <!-- #respond -->
+                                                </div>
+                                            </div>
+                                            <div class="clear">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <section class="up-sells upsells products">
+                                    <div class="col-12 mb-35 mb-lg-50 text-center">
+                                        <h3 class="big special-heading">
+                                            Sản phẩm <span class="color-main"> Liên quan</span>
+                                            <span class="shadow-heading">Product</span>
+                                        </h3>
+                                        <p class="special-heading subheading with-line"></p>
+                                    </div>
+                                    <ul class="products">
+                                        <li class="product vertical-item content-padding">
+                                            <div class="product-inner box-shadow hero-bg">
+                                                <a href="product-detail.html">
+                                                    <img src="images/products/2.jpg" alt="">
+                                                </a>
+                                                <div class="item-content">
+                                                    <p class="product-title fw-400 mb-20">
+                                                        <a href="product-detail.html">Đồng hồ điều áp khí Oxy
+                                                            SSB-OXE</a>
+                                                    </p>
+                                                    <span class="price">
+                                                        <del>
+                                                            <span>
+                                                                <span>$ </span>50.00
+                                                            </span>
+                                                        </del>
+                                                        <span>$ </span>35.00
+                                                    </span>
+                                                    <a href="shop-cart.html"
+                                                        class="add-to-card btn-small btn btn-maincolor">Thêm giỏ
+                                                        hàng</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="product vertical-item content-padding">
+                                            <div class="product-inner box-shadow hero-bg">
+                                                <a class="abs-link" title="" href="product-detail.html">
+                                                    <img src="images/products/5.jpg" alt="">
+                                                </a>
+                                                <div class="item-content">
+                                                    <p class="product-title fw-400 mb-20">
+                                                        <a href="product-detail.html">Van điều tiết Eco</a>
+                                                    </p>
+                                                    <span class="price">
+                                                        <del>
+                                                            <span>
+                                                                <span>$ </span>65.00
+                                                            </span>
+                                                        </del>
+                                                        <span>$ </span>60.00
+                                                    </span>
+                                                    <a href="shop-cart.html"
+                                                        class="add-to-card btn-small btn btn-maincolor">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="product vertical-item content-padding">
+                                            <div class="product-inner box-shadow hero-bg">
+                                                <a class="abs-link" title="" href="product-detail.html">
+                                                    <img src="images/products/6.jpg" alt="">
+                                                </a>
+                                                <div class="item-content">
+                                                    <p class="product-title fw-400 mb-20">
+                                                        <a href="product-detail.html">Bép hàn</a>
+                                                    </p>
+                                                    <span class="price">
+                                                        <del>
+                                                            <span>
+                                                                <span>$ </span>75.00
+                                                            </span>
+                                                        </del>
+                                                        <span>$ </span>65.00
+                                                    </span>
+                                                    <a href="shop-cart.html"
+                                                        class="add-to-card btn-small btn btn-maincolor">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="product vertical-item content-padding">
+                                            <div class="product-inner box-shadow hero-bg">
+                                                <a class="abs-link" title="" href="product-detail.html">
+                                                    <img src="images/products/7.jpg" alt="">
+                                                </a>
+                                                <div class="item-content">
+                                                    <p class="product-title fw-400 mb-20">
+                                                        <a href="product-detail.html">Dây dẫn điều khiển</a>
+                                                    </p>
+                                                    <span class="price">
+                                                        <del>
+                                                            <span>
+                                                                <span>$ </span>40.00
+                                                            </span>
+                                                        </del>
+                                                        <span>$ </span>35.00
+                                                    </span>
+                                                    <a href="shop-cart.html"
+                                                        class="add-to-card btn-small btn btn-maincolor">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="product vertical-item content-padding">
+                                            <div class="product-inner box-shadow hero-bg">
+                                                <a class="abs-link" title="" href="product-detail.html">
+                                                    <img src="images/products/11.jpg" alt="">
+                                                </a>
+                                                <div class="item-content">
+                                                    <p class="product-title fw-400 mb-20">
+                                                        <a href="product-detail.html">Máy cắt thép vuông góc SDC
+                                                            -32D</a>
+                                                    </p>
+                                                    <span class="price">
+                                                        <del>
+                                                            <span>
+                                                                <span>$ </span>55.00
+                                                            </span>
+                                                        </del>
+                                                        <span>$ </span>45.00
+                                                    </span>
+                                                    <a href="shop-cart.html"
+                                                        class="add-to-card btn-small btn btn-maincolor">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+                                </section>
+                            </div>
+
+
+                        </main>
+
+                        <aside class="col-lg-5 col-xl-3 order-lg-1">
+                            <div class="bg-maincolor py-50 px-30 cs">
+                                <div class="widget widget_product_search">
+                                    <h3 class="widget-title">Tìm kiếm</h3>
+                                    <form role="search" class="woocommerce-product-search" action="/">
+
+                                        <label class="screen-reader-text" for="woocommerce-product-search-field-widget">
+                                            Tìm kiếm:
+                                        </label>
+
+                                        <input type="search" id="woocommerce-product-search-field-widget"
+                                            class="search-field" placeholder="Tìm kiếm" value="" name="search">
+                                        <input type="submit" value="">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="widget woocommerce widget_product_categories">
+                                <h5 class="widget-title">Dang mục</h5>
+                                <ul class="product-categories">
+                                    <li class="cat-item cat-parent">
+                                        <a href="ao-chong-nong.html" class="active">Áo chống nóng EcoSpeed</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="may-van-oc-makita-tw03501.html">Máy vặn ốc Makita TW0350</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="tay-gian-cot-cho.html">Tay giãn cốt chờ</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="thiet-bi-ket-hop-chai-khi2.html">Thiết bị kết hợp chai khí</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="choi-nam-cham.html">Chổi nam châm</a>
+                                    </li>
+
+                                    <li class="cat-item cat-parent">
+                                        <a href="sung-moi-lua1.html">Súng mồi lửa</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="ps-ring.html">PS Ring</a>
+                                    </li>
+
+                                    <li class="cat-item cat-parent">
+                                        <a href="kep-ap-luc-ecospeed.html">Kép áp lực EcoSpeed</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="may-cat-thep-vuong-goc1.html">Máy cắt thép vuông góc</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="thiet-bi-lam-am-khi-ecospeed.html">Thiết bị làm ấm khí EcoSpeed</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="van-chong-chay-nguoc-quickmag.html">Van chống cháy ngược Quickmag</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="day-hoi-dan-khi.html">Dây hơi dẫn khí</a>
+                                        <ul class="children">
+                                            <li class="cat-item cat-parent">
+                                                <a href="dau-noi-day-hoi-dan-khi.html">Đầu nỗi dây hơi dẫn khí</a>
+                                            </li>
+                                            <li class="cat-item cat-parent">
+                                                <a href="dau-noi-day-hoi-dan-khi-oxy.html">Đầu nối dây hơi dẫn khí
+                                                    Oxy</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="cat-item cat-parent">
+                                        <a href="dau-noi-day-hoi-dan-khi-ecospeed.html">Đầu nỗi dây hơi dẫn khí
+                                            Ecospeed</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="thiet-bi-gia-ap.html">Thiết bị gia áp</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="thiet-bi-gia-nhiet.html">Thiết bị gia nhiệt</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="dong-ho-dieu-ap.html">Đồng hồ điều áp</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="chai-khi1.html">Chai khí</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <div class="widget woocommerce widget_recently_viewed_products">
+
+                                <h5 class="widget-title">Sản phẩm đã xem</h5>
+
+                                <ul class="product_list_widget">
+                                    <li>
+                                        <a href="dong-ho-dieu-ap-khi-oxy-ssb-oxe.html">
+                                            <img src="images/products/2.jpg" alt="">
+                                            <span class="product-title">Đồng hồ điều áp khí Oxy SSB-OXE</span>
+                                        </a>
+                                        <div class="d-flex justify-content-between rating-product">
+                                            <div class="star-rating">
+                                                <span style="width:80%">Rated
+                                                    <strong class="rating">5.00 </strong>
+                                                    out of 5
+                                                </span>
+                                            </div>
+                                            <a href="#" class="remove" aria-label="Remove this item"
+                                                data-product_id="73" data-product_sku=""><i
+                                                    class="fs-14 ico-trash color-main2"></i></a>
+                                        </div>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">$</span>65.00
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="dong-ho-dieu-ap-khi-ecospeed-ew-200.html">
+                                            <img src="images/products/3.jpg" alt="">
+                                            <span class="product-title">Đồng hồ điều áp khí EcoSpeed EW - 200</span>
+                                        </a>
+                                        <div class="d-flex justify-content-between rating-product">
+                                            <div class="star-rating">
+                                                <span style="width:80%">Rated
+                                                    <strong class="rating">5.00 </strong>
+                                                    out of 5
+                                                </span>
+                                            </div>
+                                            <a href="#" class="remove" aria-label="Remove this item"
+                                                data-product_id="73" data-product_sku=""><i
+                                                    class="fs-14 ico-trash color-main2"></i></a>
+                                        </div>
+                                        <del>
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">$</span>
+                                                40.00
+                                            </span>
+                                        </del>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">$</span>
+                                            35.00
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="mo-cat.html">
+                                            <img src="images/products/4.jpg" alt="">
+                                            <span class="product-title">Mỏ cắt</span>
+                                        </a>
+                                        <div class="d-flex justify-content-between rating-product">
+                                            <div class="star-rating">
+                                                <span style="width:80%">Rated
+                                                    <strong class="rating">5.00 </strong>
+                                                    out of 5
+                                                </span>
+                                            </div>
+                                            <a href="#" class="remove" aria-label="Remove this item"
+                                                data-product_id="73" data-product_sku=""><i
+                                                    class="fs-14 ico-trash color-main2"></i></a>
+                                        </div>
+                                        <del>
+                                            <span class="woocommerce-Price-amount amount">
+                                                <span class="woocommerce-Price-currencySymbol">$</span>
+                                                55.00
+                                            </span>
+                                        </del>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">$</span>
+                                            45.00
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="widget woocommerce widget_price_filter">
+
+                                <h5 class="widget-title">Price Filter</h5>
+
+                                <form method="get" action="/">
+                                    <div class="price_slider_wrapper">
+
+                                        <div class="price_slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                            style="">
+                                            <span class="from">$20.00</span>
+                                            <div class="ui-slider-range ui-widget-header ui-corner-all"
+                                                style="left: 14%; width: 65%;">
+                                            </div>
+                                            <span class="to">$700.00</span>
+                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"
+                                                style="left: 12%;">
+
+                                            </span>
+                                            <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"
+                                                style="left: 80%;">
+
+                                            </span>
+                                        </div>
+                                        <div class="price_slider_amount">
+
+                                            <input type="text" id="min_price" name="min_price" value="" data-min="20"
+                                                placeholder="Min price" style="display: none;">
+
+                                            <input type="text" id="max_price" name="max_price" value="" data-max="30"
+                                                placeholder="Max price" style="display: none;">
+
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </aside>
+                    </div>
+
+                </div>
+            </section>
+
+            <footer
+                class="page_footer text-md-left page_footer ds ms s-pt-60 s-pb-10 s-pt-lg-100 s-pb-lg-45 s-pt-xl-150 s-pb-xl-100 c-gutter-60">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 text-md-center text-lg-left animate" data-animation="fadeInUp">
+
+                            <div class="widget widget_bloginfo">
+                                <a href="./" class="logo">
+                                    <img src="images/logo5.png" alt="">
+                                </a>
+                                <p>
+                                    Công ty TNHH EcoSpeed Việt Nam (ESV) được thành lập tháng 1 năm 2017, là doanh
+                                    nghiệp đầu tiên chuyển giao công nghệ và độc quyền phân phối công nghệ hàn EcoSpeed
+                                    từ Nhật Bản tại Việt Nam.
+                                </p>
+                                <span class="social-icons">
+
+                                    <a href="https://www.facebook.com/profile.php?id=100048729954906"
+                                        class="fa fa-facebook " title="facebook"></a>
+                                    <a href="https://www.youtube.com/watch?v=iAF2ynN9gzg&t=5s"
+                                        class="fa fa-youtube-play " title="youtube-play"></a>
+                                    <a href="https://www.youtube.com/watch?v=FT7VaJCNJJA&t=6s" class="fa fa-twitter "
+                                        title="twitter"></a>
+                                    <a href="https://linkedin.com/" class="fa fa-linkedin " title="linkedin"></a>
+                                    <a href="https://instagram.com/" class="fa fa-instagram " title="instagram"></a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 animate" data-animation="fadeInUp">
+                            <div class="widget widget_working_hours">
+                                <h3>
+                                    <span class="color-main">Liên hệ</span>
+                                </h3>
+                                <ul class="list-bordered">
+
+                                    <li>
+                                        <a href="contact.html#page_map">
+                                            <div class="icon-inline">
+                                                <i class="ico ico-map-marker color-main"></i>
+                                                <p>Số 9D7, KĐT mới Đại Kim, P.Đại Kim, Q.Hoàng Mai, TP.Hà Nội </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="callto:024-3858-2525 ">
+                                            <div class="icon-inline">
+                                                <i class="ico ico-phone color-main"></i>
+                                                <p>024-3858-2525 </p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="mailto:contact@ecospeed.vn">
+                                            <div class="icon-inline">
+                                                <i class="ico ico-envelope-alt color-main"></i>
+                                                <p>contact@ecospeed.vn</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 animate" data-animation="fadeInUp">
+                            <div class="widget widget_mailchimp">
+
+                                <h3 class="widget-title">
+                                    <span class="color-main">Đăng ký</span>
+                                </h3>
+
+                                <p>
+                                    Luôn cập nhật những tin tức mới nhất của chúng tôi. Chúng tôi cam kết không spam!
+                                </p>
+
+                                <form class="signup" action="/">
+                                    <label for="mailchimp_email_text">
+                                        <span class="screen-reader-text">Đăng ký:</span>
+                                    </label>
+
+                                    <input id="mailchimp_email_text" name="email" type="email"
+                                        class="form-control mailchimp_email" placeholder="Your email">
+
+                                    <button type="submit" class="search-submit">
+                                        <span class="screen-reader-text">Đăng ký</span>
+                                    </button>
+                                    <div class="response"></div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+            <section class="page_copyright ls s-py-20">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 text-center animate" data-animation="fadeInUp">
+                            <p>&copy; COPYRIGHT 2024 ECOSPEED VIỆT NAM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </div><!-- eof #box_wrapper -->
+    </div><!-- eof #canvas -->
+
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>

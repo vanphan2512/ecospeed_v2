@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+	<title>CÔNG TY TNHH ECOSPEED VIỆT NAM</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal fade modal-search" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="widget widget_search">
+					<form method="get" class="searchform search-form" action="/">
+						<div class="form-group">
+							<input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+								id="modal-search-input">
+						</div>
+						<button type="submit" class="btn">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls p-normal">
+		</div>
+	</div><!-- eof .modal -->
+
+	<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="modalLoginForm"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+				<div class="modal-body">
+					<div class="modal-header justify-content-center">
+						<h4 class="modal-title">Sign In</h4>
+					</div>
+					<form action="/">
+						<div class="form-group has-placeholder">
+							<label for="name-sigin">Your Name:</label>
+							<input type="text" class="form-control" id="name-sigin" placeholder="Name"
+								name="First name">
+						</div>
+						<div class="form-group has-placeholder">
+							<label for="sigpassword">Password:</label>
+							<input type="password" class="form-control" id="sigpassword" placeholder="password"
+								name="sigpassword">
+						</div>
+						<div class="modal-password">
+							<a href="#" class="modal-password-btn">Forgot password?</a>
+						</div>
+						<div class="modal-footer d-flex justify-content-center">
+							<button type="submit" class="btn btn-small btn-wide btn-maincolor log-btn">Log in</button>
+						</div>
+					</form>
+				</div>
+				<div class="modal-image item-media cover-image s-cover-right d-none d-md-block">
+					<img src="img/register-side.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<div class="header_absolute ds ms s-overlay">
+
+				<!--topline section-->
+				<section
+					class="page_topline with-cart s-pt-10 s-pb-3 s-py-xl-0 topline-overflow-visible ds ms s-parallax s-overlay bg-size-auto">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col-md-6 text-md-left text-center">
+								<ul class="top-includes border-divided">
+									<li>
+										<i class="color-main ico ico-map-marker fs-14 mr-2"></i>
+										Số 9D7, KĐT mới Đại Kim, P.Đại Kim, Q.Hoàng Mai, TP.Hà Nội
+									</li>
+									<li class="d-block d-xl-inline-block meta-email">
+										<a href="mailto:contact@ecospeed.vn">
+											<i class="color-main ico ico-envelope-alt fs-14 mr-2"></i>
+											contact@ecospeed.vn
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-6 text-md-right text-center">
+								<ul class="top-includes border-divided">
+									<li class="d-block d-xl-inline-block">
+										<div class="meta-phone">
+											<a href="callto:024-3858-2525">
+												<i class="ico ico-phone color-main fs-14 pr-2"></i>024-3858-2525
+											</a>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="search_modal_button">
+											<i class="fa fa-search"></i>
+										</a>
+										<div class="dropdown dropdown-card">
+											<a class="dropdown-toggle dropdown-shopping-cart" href="#" role="button"
+												id="dropdown-shopping-cart" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												<i class="ico ico-shopping-bag"></i>
+												<span class="badge bg-maincolor">2</span>
+											</a>
+											<div class="dropdown-menu dropdown-menu-right dropdown-cart ls"
+												aria-labelledby="dropdown-shopping-cart">
+												<div class="widget woocommerce widget_shopping_cart">
+
+													<div class="widget_shopping_cart_content">
+
+														<ul class="product_list_widget">
+															<li>
+																<a href="product-detail.html">
+																	<img src="images/products/5.jpg" alt="">
+																	<span class="product-title">Van điều tiết Eco</span>
+																</a>
+																<div class="d-flex justify-content-between shop-item">
+																	<p class="shop-desk">Van</p>
+																	<a href="#" class="remove"
+																		aria-label="Remove this item"
+																		data-product_id="73" data-product_sku=""><i
+																			class="fs-14 ico-trash color-main2"></i></a>
+																</div>
+																<div class="d-flex align-items-center">
+																	<div class="woocommerce-Price-amount amount">
+																		<span
+																			class="woocommerce-Price-currencySymbol">$</span>55<sup>00</sup>
+																	</div>
+																</div>
+															</li>
+															<li>
+																<a href="product-detail.html">
+																	<img src="images/products/2.jpg" alt="">
+																	<span class="product-title">Đồng hồ điều áp khí Oxy
+																		SSB-OXE</span>
+																</a>
+																<div class="d-flex justify-content-between shop-item">
+																	<p class="shop-desk">Đồng hồ</p>
+																	<a href="#" class="remove"
+																		aria-label="Remove this item"
+																		data-product_id="73" data-product_sku=""><i
+																			class="fs-14 ico-trash color-main2"></i></a>
+																</div>
+																<div class="d-flex align-items-center">
+																	<div class="woocommerce-Price-amount amount">
+																		<span
+																			class="woocommerce-Price-currencySymbol">$</span>55<sup>00</sup>
+																	</div>
+																</div>
+															</li>
+														</ul>
+
+														<p class="woocommerce-mini-cart__total total">
+															Tổng:
+															<span class="woocommerce-Price-amount amount fw-500">
+																<span class="woocommerce-Price-currencySymbol">$</span>
+																110.00
+															</span>
+														</p>
+
+														<p class="woocommerce-mini-cart__buttons buttons">
+															<a href="shop-cart.html"
+																class="btn btn-small btn-maincolor button wc-forward">giỏ
+																hàng</a>
+															<a href="shop-checkout.html"
+																class="btn btn-small btn-outline-maincolor button checkout wc-forward">Thanh
+																toán</a>
+														</p>
+													</div>
+												</div>
+
+
+											</div>
+										</div>
+										<a href="#" data-toggle="modal" data-target="#modalLoginForm"><i
+												class="fa fa-user"></i></a>
+									</li>
+
+
+									<li>
+										<span class="social-icons">
+											<a href="https://www.facebook.com/profile.php?id=100048729954906"
+												class="fa fa-facebook " title="facebook"></a>
+											<a href="https://www.youtube.com/watch?v=iAF2ynN9gzg&t=5s"
+												class="fa fa-youtube-play " title="youtube-play"></a>
+											<a href="https://www.youtube.com/watch?v=FT7VaJCNJJA&t=6s"
+												class="fa fa-twitter " title="twitter"></a>
+											<a href="https://linkedin.com/" class="fa fa-linkedin "
+												title="linkedin"></a>
+											<a href="https://instagram.com/" class="fa fa-instagram "
+												title="instagram"></a>
+										</span>
+									</li>
+
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--eof topline-->
+
+				<header class="page_header main_header s-py-md-0 ds ms justify-nav-end s-bordertop">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col-lg-3 col-md-5 col-11">
+								<a href="./" class="logo">
+									<img src="images/logo5.png" alt="">
+								</a>
+							</div>
+							<div class="col-lg-9 col-md-7 col-1">
+								<div class="nav-wrap">
+									<!-- main nav start -->
+									<nav class="top-nav">
+										<ul class="nav sf-menu">
+											<li class="active">
+												<a href="index.html">Trang chủ</a>
+											</li>
+
+											<!-- about -->
+											<li>
+												<a href="about.html">Giới thiệu</a>
+												<ul>
+													<li>
+														<a href="about.html">Tổng quan về công ty</a>
+													</li>
+													<li>
+														<a href="tam-nhin-su-menh.html">Tầm nhìn, sứ mệnh</a>
+													</li>
+
+													<li>
+														<a href="gia-tri-cot-loi.html">Giá trị cốt lõi</a>
+													</li>
+													<li>
+														<a href="cong-nghe-han-escospeed.html">Công nghệ hàn
+															Ecospeed</a>
+													</li>
+												</ul>
+											</li>
+											<!-- eof about -->
+
+											<!-- Dự án -->
+											<li>
+												<a href="project.html">Dự án</a>
+											</li>
+											<!-- eof Dự án -->
+
+											<!-- Sản phẩm -->
+											<li>
+												<a href="products.html">Sản phẩm</a>
+											</li>
+											<!-- eof Sản phẩm -->
+
+											<!-- Bài viết -->
+											<li>
+												<a href="posts.html">Bài viết</a>
+											</li>
+											<!-- eof Bài viết -->
+
+											<!-- Bài viết -->
+											<li>
+												<a href="contact.html">Liên hệ</a>
+											</li>
+											<!-- eof Bài viết -->
+
+										</ul>
+
+
+									</nav>
+									<!-- eof main nav -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- header toggler -->
+					<span class="toggle_menu"><span></span></span>
+
+				</header>
+
+
+				<section
+					class="page_title ds ms s-pt-120 s-pb-50 s-pt-lg-150 s-pb-lg-90 page_title s-parallax s-overlay bg-size-auto">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-md-12 text-center text-lg-left">
+								<h1>Dự án</h1>
+								<ol class=" breadcrumb">
+									<li class="breadcrumb-item">
+										<a href="./">Trang chủ</a>
+									</li>
+									<li class="breadcrumb-item active">
+										Dự án
+									</li>
+								</ol>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+
+			<section class="ls s-pt-50 s-pb-30 s-pt-lg-90 s-pb-lg-70 s-pt-xl-140 s-pb-xl-120 gallery-excerpt">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+
+							<div class="row isotope-wrapper masonry-layout c-gutter-30 c-mb-30">
+
+								<div class="col-xl-4 col-sm-6 welding tig-welding">
+									<div class="gallery-item vertical-item text-center content-padding hero-bg">
+										<div class="item-media">
+											<img src="images/projects/1a.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="link-zoom photoswipe-link" title=""
+														href="images/projects/1a.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="item-content">
+											<h6 class="mb-15">
+												<a href="project-detail.html">Cột tầng 1 dự án nhà thể thao đa năng -
+													trường mầm non Thế Hệ tỉnh Ninh Bình</a>
+											</h6>
+											<p>
+												Mặt bằng cột tầng 1 sau khi thi công xong, phía Chủ đầu tư có đánh giá
+												kết cấu chắc chắn, thông thoáng đặc biệt các vị trí cột có cốt thép dày
+												khá thuận tiện cho việc đổ và đầm bê tông. </p>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-4 col-sm-6 metal-repair mig-welding">
+									<div class="gallery-item vertical-item text-center content-padding hero-bg">
+										<div class="item-media">
+											<img src="images/projects/3.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="link-zoom photoswipe-link" title=""
+														href="images/projects/3.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="item-content">
+											<h6 class="mb-15">
+												<a href="project-detail.html">Thi công hàn EcoSpeed tại dự án nhà thể
+													thao đa năng tỉnh Ninh Bình</a>
+											</h6>
+											<p>
+												Được sự đồng ý và chấp thuận của Chủ Đầu Tư, ngày 07/03/2020 EcoSpeed
+												Việt Nam chính thức triển khai thi công hàn nối thép cho cột tại dự án
+												nhà thể thao đa năng trường mầm non Thế Hệ. </p>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-4 col-sm-6 assembly-design tig-welding">
+									<div class="gallery-item vertical-item text-center content-padding hero-bg">
+										<div class="item-media">
+											<img src="images/projects/4.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="link-zoom photoswipe-link" title=""
+														href="images/projects/4.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="item-content">
+											<h6 class="mb-15">
+												<a href="project-detail.html">Trình diễn hàn mẫu công nghệ hàn EcoSpeed
+													Việt Nam cho Ban
+													QLDA, TVGS dự án Bcons Miền Đông.</a>
+											</h6>
+											<p>
+												Được sự đồng ý của Chủ đầu tư, Ban QLDA và các bên liên quan, Ecospeed
+												Việt Nam đã đến dự án BCONS Miền Đông trình diễn demo công nghệ hàn nối
+												thép. Rất mong được hợp tác với Quý Công Ty trong năm mới cùng những dự
+												án mới. </p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-4 col-sm-6 welding assembly-design">
+									<div class="gallery-item vertical-item text-center content-padding hero-bg">
+										<div class="item-media">
+											<img src="images/projects/5.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="link-zoom photoswipe-link" title=""
+														href="images/projects/5.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="item-content">
+											<h6 class="mb-15">
+												<a href="project-detail.html">Bcons Construction Group</a>
+											</h6>
+											<p>
+												EcoSpeed Việt Nam thật vinh dự khi được Ban Lãnh đạo Công ty, P. Thi
+												công, P. Vật tư của Tổng công ty xây dựng Bcons sắp xếp thời gian cho
+												chúng tôi được thuyết trình công nghệ hàn nối thép EcoSpeed của Nhật
+												Bản. Rất cám ơn công ty đã quan tâm đến công nghệ hàn nối thép và đã đề
+												ra phương án hợp tác giữa hai bên. Theo như anh Thạch - TGĐ nói: cái
+												quan trọng cuối cùng nhất là hiệu quả, và để chứng minh tính hiệu quả là
+												việc bắt tay vào thực hiện. Hy vọng, trong thời gian tới có thể được
+												song hành phát triển cùng Tổng Công ty </p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-4 col-sm-6 metal-repair mig-welding">
+									<div class="gallery-item vertical-item text-center content-padding hero-bg">
+										<div class="item-media">
+											<img src="images/projects/6.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="link-zoom photoswipe-link" title=""
+														href="images/projects/6.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="item-content">
+											<h6 class="mb-15">
+												<a href="project-detail.html">Triển khai thi công dự án siêu thị Ninh
+													Bình</a>
+											</h6>
+											<p>
+												Sau một thời gian bị tạm hoãn do thay đổi thiết kế và thời tiết, cuối
+												cùng dự án đã bắt đầu triển khai và thi công hạng mục hàn nối thép bằng
+												công nghệ hàn EcoSpeed. </p>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-4 col-sm-6 assembly-design tig-welding">
+									<div class="gallery-item vertical-item text-center content-padding hero-bg">
+										<div class="item-media">
+											<img src="images/projects/7.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="link-zoom photoswipe-link" title=""
+														href="images/projects/7.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="item-content">
+											<h6 class="mb-15">
+												<a href="project-detail.html">Dự án Siêu thị nội thất Ninh Bình.</a>
+											</h6>
+											<p>
+												Được sự quan tâm của chủ đầu tư dự án, EcoSpeed đã tới thăm và làm việc
+												trực tiếp tại Ninh Bình. Sau khi hai bên trao đổi thông tin có liên
+												quan, chủ đầu tư dự án đã quyết định áp dụng công nghệ hàn EcoSpeed vào
+												thi công dự án này. Quy mô: Diện tích sàn 1000m2. 3 tầng. Đơn vị thi
+												công: EcoSpeed Thời gian thi công dự kiến: Đầu tháng 7 </p>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-4 col-sm-6 welding">
+									<div class="gallery-item vertical-item text-center content-padding hero-bg">
+										<div class="item-media">
+											<img src="images/projects/8.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="link-zoom photoswipe-link" title=""
+														href="images/projects/8.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="item-content">
+											<h6 class="mb-15">
+												<a href="project-detail.html">Thử nghiệm chất lượng mối hàn EcoSpeed tại
+													dự án Golden Square Đà Nẵng</a>
+											</h6>
+											<p>
+												Để chuẩn bị thi công tại dự án này, CĐT và nhà thầu Delta-V đã cử đại
+												diện chứng kiến thi công thí nghiệm đầu vào bằng việc hàn mẫu thí nghiệm
+												các thép D20-28 từ công trường gửi ra Hà Nội. Tất cả các mẫu thí nghiệm
+												đều đạt yêu cầu của tiêu chuẩn TCVN 11977, TCVN1651. </p>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-4 col-sm-6 assembly-design">
+									<div class="gallery-item vertical-item text-center content-padding hero-bg">
+										<div class="item-media">
+											<img src="images/projects/9.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="link-zoom photoswipe-link" title=""
+														href="images/projects/9.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="item-content">
+											<h6 class="mb-15">
+												<a href="project-detail.html">Dự án nhà xưởng Lotte - VSIP 1, Bình
+													Dương</a>
+											</h6>
+											<p>
+												Để triển khai thi công đại trà tại dự án nhà xưởng Lotte - nhà thầu
+												chính Shimiz đã yêu cầu bên EcoSpeed tiến hành trình diễn hàn mẫu thí
+												nghiệm tại hiện trường. Nhà thầu chính Shimiz đánh giá rất cao tính
+												chuyên nghiệp trong thi công và chất lượng mối hàn. Nhà thầu chính
+												Shimiz cũng đã đồng ý áp dụng công nghệ hàn nối thép EcoSpeed tại dự án
+												này. Thời gian dự kiến thi công: đầu tháng 6. </p>
+											<div class="tagcloud">
+												<a href="#">Assembly Design</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-xl-4 col-sm-6 welding tig-welding">
+									<div class="gallery-item vertical-item text-center content-padding hero-bg">
+										<div class="item-media">
+											<img src="images/projects/10.jpg" alt="">
+											<div class="media-links">
+												<div class="links-wrap">
+													<a class="link-zoom photoswipe-link" title=""
+														href="images/projects/10.jpg"></a>
+												</div>
+											</div>
+										</div>
+										<div class="item-content">
+											<h6 class="mb-15">
+												<a href="project-detail.html">Trình diễn công nghệ hàn EcoSpeed tại dự
+													án 20 Cộng Hoà - Tân Bình, HCM</a>
+											</h6>
+											<p>
+												Được sự đồng ý của chủ đầu tư, chúng tôi đã tổ chức một buổi thuyết
+												trình công nghệ và trình diễn hàn mẫu cho CĐT, tư vấn giám sát, đơn vị
+												thiết kế và thi công. Buổi trình diễn diễn ra tốt đẹp, nhận được nhiều
+												sự quan tâm của khách hàng . Hy vọng sớm có thể triển khai thi công hàn
+												EcoSpeed tại dự án này. </p>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!-- .isotope-wrapper-->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer
+				class="page_footer text-md-left page_footer ds ms s-pt-60 s-pb-10 s-pt-lg-100 s-pb-lg-45 s-pt-xl-150 s-pb-xl-100 c-gutter-60">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-4 text-md-center text-lg-left animate" data-animation="fadeInUp">
+
+							<div class="widget widget_bloginfo">
+								<a href="./" class="logo">
+									<img src="images/logo5.png" alt="">
+								</a>
+								<p>
+									Công ty TNHH EcoSpeed Việt Nam (ESV) được thành lập tháng 1 năm 2017, là doanh
+									nghiệp đầu tiên chuyển giao công nghệ và độc quyền phân phối công nghệ hàn EcoSpeed
+									từ Nhật Bản tại Việt Nam.
+								</p>
+								<span class="social-icons">
+
+									<a href="https://www.facebook.com/profile.php?id=100048729954906"
+										class="fa fa-facebook " title="facebook"></a>
+									<a href="https://www.youtube.com/watch?v=iAF2ynN9gzg&t=5s"
+										class="fa fa-youtube-play " title="youtube-play"></a>
+									<a href="https://www.youtube.com/watch?v=FT7VaJCNJJA&t=6s" class="fa fa-twitter "
+										title="twitter"></a>
+									<a href="https://linkedin.com/" class="fa fa-linkedin " title="linkedin"></a>
+									<a href="https://instagram.com/" class="fa fa-instagram " title="instagram"></a>
+								</span>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4 animate" data-animation="fadeInUp">
+							<div class="widget widget_working_hours">
+								<h3>
+									<span class="color-main">Liên hệ</span>
+								</h3>
+								<ul class="list-bordered">
+
+									<li>
+										<a href="contact.html#page_map">
+											<div class="icon-inline">
+												<i class="ico ico-map-marker color-main"></i>
+												<p>Số 9D7, KĐT mới Đại Kim, P.Đại Kim, Q.Hoàng Mai, TP.Hà Nội</p>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="callto:024-3858-2525 ">
+											<div class="icon-inline">
+												<i class="ico ico-phone color-main"></i>
+												<p>024-3858-2525 </p>
+											</div>
+										</a>
+									</li>
+
+									<li>
+										<a href="mailto:contact@ecospeed.vn">
+											<div class="icon-inline">
+												<i class="ico ico-envelope-alt color-main"></i>
+												<p>contact@ecospeed.vn</p>
+											</div>
+										</a>
+									</li>
+
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4 animate" data-animation="fadeInUp">
+							<div class="widget widget_mailchimp">
+
+								<h3 class="widget-title">
+									<span class="color-main">Đăng ký</span>
+								</h3>
+
+								<p>
+									Luôn cập nhật những tin tức mới nhất của chúng tôi. Chúng tôi cam kết không spam!
+								</p>
+
+								<form class="signup" action="/">
+									<label for="mailchimp_email_text">
+										<span class="screen-reader-text">Đăng ký:</span>
+									</label>
+
+									<input id="mailchimp_email_text" name="email" type="email"
+										class="form-control mailchimp_email" placeholder="Your email">
+
+									<button type="submit" class="search-submit">
+										<span class="screen-reader-text">Đăng ký</span>
+									</button>
+									<div class="response"></div>
+								</form>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</footer>
+
+			<section class="page_copyright ls s-py-20">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-12 text-center animate" data-animation="fadeInUp">
+							<p>&copy; COPYRIGHT 2024 ECOSPEED VIỆT NAM
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+		</div><!-- eof #box_wrapper -->
+	</div><!-- eof #canvas -->
+
+
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

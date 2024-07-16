@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <title>CÔNG TY TNHH ECOSPEED VIỆT NAM</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+    <link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+
+<body>
+
+
+    <div class="preloader">
+        <div class="preloader_image"></div>
+    </div>
+
+    <!-- search modal -->
+    <div class="modal fade modal-search" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="widget widget_search">
+                    <form method="get" class="searchform search-form" action="/">
+                        <div class="form-group">
+                            <input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
+                                id="modal-search-input">
+                        </div>
+                        <button type="submit" class="btn">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+        <div class="fw-messages-wrap ls p-normal">
+            <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+            <!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+        </div>
+    </div><!-- eof .modal -->
+
+    <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="modalLoginForm"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="modal-header justify-content-center">
+                        <h4 class="modal-title">Sign In</h4>
+                    </div>
+                    <form action="/">
+                        <div class="form-group has-placeholder">
+                            <label for="name-sigin">Your Name:</label>
+                            <input type="text" class="form-control" id="name-sigin" placeholder="Name"
+                                name="First name">
+                        </div>
+                        <div class="form-group has-placeholder">
+                            <label for="sigpassword">Password:</label>
+                            <input type="password" class="form-control" id="sigpassword" placeholder="password"
+                                name="sigpassword">
+                        </div>
+                        <div class="modal-password">
+                            <a href="#" class="modal-password-btn">Forgot password?</a>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            <button type="submit" class="btn btn-small btn-wide btn-maincolor log-btn">Log in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-image item-media cover-image s-cover-right d-none d-md-block">
+                    <img src="img/register-side.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="canvas">
+        <div id="box_wrapper">
+            <div class="header_absolute ds ms s-overlay">
+                <!--topline section-->
+                <section class="page_topline with-cart s-pt-10 s-pb-3 s-py-xl-0 topline-overflow-visible ds ms">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-md-6 text-md-left text-center">
+                                <ul class="top-includes border-divided">
+                                    <li>
+                                        <i class="color-main ico ico-map-marker fs-14 mr-2"></i>
+                                        Số 9D7, KĐT mới Đại Kim, P.Đại Kim, Q.Hoàng Mai, TP.Hà Nội
+                                    </li>
+                                    <li class="d-block d-xl-inline-block meta-email">
+                                        <a href="mailto:contact@ecospeed.vn">
+                                            <i class="color-main ico ico-envelope-alt fs-14 mr-2"></i>
+                                            contact@ecospeed.vn
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 text-md-right text-center">
+                                <ul class="top-includes border-divided">
+                                    <li class="d-block d-xl-inline-block">
+                                        <div class="meta-phone">
+                                            <a href="callto:024-3858-2525">
+                                                <i class="ico ico-phone color-main fs-14 pr-2"></i>024-3858-2525
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="search_modal_button">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                        <div class="dropdown dropdown-card">
+                                            <a class="dropdown-toggle dropdown-shopping-cart" href="#" role="button"
+                                                id="dropdown-shopping-cart" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <i class="ico ico-shopping-bag"></i>
+                                                <span class="badge bg-maincolor">2</span>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-cart ls"
+                                                aria-labelledby="dropdown-shopping-cart">
+                                                <div class="widget woocommerce widget_shopping_cart">
+
+
+                                                    <div class="widget_shopping_cart_content">
+
+                                                        <ul class="product_list_widget">
+                                                            <li>
+                                                                <a href="shop-product-right.html">
+                                                                    <img src="images/shop/05.jpg" alt="">
+                                                                    <span class="product-title">Walmec Temperature
+                                                                        Aluminum</span>
+                                                                </a>
+                                                                <div class="d-flex justify-content-between shop-item">
+                                                                    <p class="shop-desk">Pipe Welding</p>
+                                                                    <a href="#" class="remove"
+                                                                        aria-label="Remove this item"
+                                                                        data-product_id="73" data-product_sku=""><i
+                                                                            class="fs-14 ico-trash color-main2"></i></a>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="woocommerce-Price-amount amount">
+                                                                        <span
+                                                                            class="woocommerce-Price-currencySymbol">$</span>55<sup>00</sup>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <a href="shop-product-right.html">
+                                                                    <img src="images/shop/03.jpg" alt="">
+                                                                    <span class="product-title">Weld Gloves Tig</span>
+                                                                </a>
+                                                                <div class="d-flex justify-content-between shop-item">
+                                                                    <p class="shop-desk">Frame Welding</p>
+                                                                    <a href="#" class="remove"
+                                                                        aria-label="Remove this item"
+                                                                        data-product_id="73" data-product_sku=""><i
+                                                                            class="fs-14 ico-trash color-main2"></i></a>
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="woocommerce-Price-amount amount">
+                                                                        <span
+                                                                            class="woocommerce-Price-currencySymbol">$</span>55<sup>00</sup>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+
+                                                        <p class="woocommerce-mini-cart__total total">
+                                                            Subtotal:
+                                                            <span class="woocommerce-Price-amount amount fw-500">
+                                                                <span class="woocommerce-Price-currencySymbol">$</span>
+                                                                110.00
+                                                            </span>
+                                                        </p>
+
+                                                        <p class="woocommerce-mini-cart__buttons buttons">
+                                                            <a href="shop-cart.html"
+                                                                class="btn btn-small btn-maincolor button wc-forward">View
+                                                                cart</a>
+                                                            <a href="shop-checkout.html"
+                                                                class="btn btn-small btn-outline-maincolor button checkout wc-forward">Checkout</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <a href="#" data-toggle="modal" data-target="#modalLoginForm"><i
+                                                class="fa fa-user"></i></a>
+                                    </li>
+
+
+                                    <li>
+                                        <span class="social-icons">
+                                            <a href="https://www.facebook.com/profile.php?id=100048729954906"
+                                                class="fa fa-facebook " title="facebook"></a>
+                                            <a href="https://www.youtube.com/watch?v=iAF2ynN9gzg&t=5s"
+                                                class="fa fa-youtube-play " title="youtube-play"></a>
+                                            <a href="https://www.youtube.com/watch?v=FT7VaJCNJJA&t=6s"
+                                                class="fa fa-twitter " title="twitter"></a>
+                                            <a href="https://linkedin.com/" class="fa fa-linkedin "
+                                                title="linkedin"></a>
+                                            <a href="https://instagram.com/" class="fa fa-instagram "
+                                                title="instagram"></a>
+                                        </span>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--eof topline-->
+                <header class="page_header main_header s-py-md-0 ds ms justify-nav-end s-bordertop">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-5 col-11">
+                                <a href="./" class="logo">
+                                    <img src="images/logo5.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-9 col-md-7 col-1">
+                                <div class="nav-wrap">
+
+                                    <!-- main nav start -->
+                                    <nav class="top-nav">
+                                        <ul class="nav sf-menu">
+                                            <li class="active">
+                                                <a href="index.html">Trang chủ</a>
+                                            </li>
+
+                                            <!-- about -->
+                                            <li>
+                                                <a href="about.html">Giới thiệu</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="about.html">Tổng quan về công ty</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="tam-nhin-su-menh.html">Tầm nhìn, sứ mệnh</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a href="gia-tri-cot-loi.html">Giá trị cốt lõi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="cong-nghe-han-escospeed.html">Công nghệ hàn
+                                                            Ecospeed</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!-- eof about -->
+
+                                            <!-- Dự án -->
+                                            <li>
+                                                <a href="project.html">Dự án</a>
+                                            </li>
+                                            <!-- eof Dự án -->
+
+                                            <!-- Sản phẩm -->
+                                            <li>
+                                                <a href="products.html">Sản phẩm</a>
+                                            </li>
+                                            <!-- eof Sản phẩm -->
+
+                                            <!-- Bài viết -->
+                                            <li>
+                                                <a href="posts.html">Bài viết</a>
+                                            </li>
+                                            <!-- eof Bài viết -->
+
+                                            <!-- Bài viết -->
+                                            <li>
+                                                <a href="contact.html">Liên hệ</a>
+                                            </li>
+                                            <!-- eof Bài viết -->
+
+                                        </ul>
+
+
+                                    </nav>
+                                    <!-- eof main nav -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- header toggler -->
+                    <span class="toggle_menu"><span></span></span>
+                </header>
+
+                <section
+                    class="page_title ds ms s-pt-120 s-pb-50 s-pt-lg-150 s-pb-lg-90 page_title s-parallax s-overlay bg-size-auto">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-md-12 text-center text-lg-left">
+                                <h1>Bcons Construction Group1</h1>
+                                <ol class=" breadcrumb">
+                                    <li class="breadcrumb-item">
+                                        <a href="./">Trang chủ</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="posts.html">Bài viết</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">
+                                        Bcons Construction Group
+                                    </li>
+                                </ol>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <section class="ls s-py-60 s-py-lg-100 s-py-xl-150 c-gutter-70">
+                <div class="container">
+                    <div class="row">
+                        <main class="col-lg-7 col-xl-8">
+                            <article
+                                class="vertical-item post single-post type-post status-publish format-standard has-post-thumbnail">
+
+                                <!-- .post-thumbnail -->
+                                <div class="item-media post-thumbnail">
+                                    <img src="images/projects/5.jpg" alt="">
+                                </div>
+
+
+                                <div class="item-content">
+                                    <div class="entry-meta bordered">
+                                        <span class="byline">
+                                            <span>
+                                                <span class="screen-reader-text">Posted on</span>
+                                                <i class="color-main fs-14 fa fa-clock-o"></i>
+                                                <time class="entry-date published updated"
+                                                    datetime="2020-04-23T15:15:12+00:00">14 July 2024</time>
+                                            </span>
+                                            <span class="author vcard">
+                                                <span class="screen-reader-text">Tác giả </span>
+                                                <i class="color-main fs-14 ico ico-user"></i>
+                                                Admin
+                                            </span>
+                                            <span class="item-likes-count">
+                                                <i class="fs-14 fw-900 color-main fa fa-heart-o"></i>
+                                                100 thích
+                                            </span>
+                                            <span class="comment-count comments-link">
+                                                <a href="blog-single-right.html#comments">
+                                                    <i class="color-main fs-14 color-main ico ico-comments"></i>
+                                                    56
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </div><!-- .entry-meta -->
+
+                                    <div class="entry-content">
+                                        <p>EcoSpeed Việt Nam thật vinh dự khi được Ban Lãnh đạo Công ty, P. Thi công, P. Vật tư của Tổng công ty xây dựng Bcons sắp xếp thời gian cho chúng tôi được thuyết trình công nghệ hàn nối thép EcoSpeed của Nhật Bản. Rất cám ơn công ty đã quan tâm đến công nghệ hàn nối thép và đã đề ra phương án hợp tác giữa hai bên. </p>
+
+                                        <p>Theo như anh Thạch - TGĐ nói: cái quan trọng cuối cùng nhất là hiệu quả, và để chứng minh tính hiệu quả là việc bắt tay vào thực hiện. Hy vọng, trong thời gian tới có thể được song hành phát triển cùng Tổng Công ty</p>
+
+
+                                    </div>
+                                    <!-- .entry-content -->
+                                </div>
+                                <!-- .item-content -->
+                            </article>
+
+
+                            <div id="comments" class="post-comments comments-area">
+                                <p id="reply-title" class="fs-30 fw-700 comment-reply-title special-heading">Bình luận</p>
+
+                                <div id="respond" class="comment-respond ls d-flex">
+                                    <form action="/" method="post" id="commentform" class="comment-form small-form"
+                                        novalidate="">
+                                        <p class="comment-form-author form-group has-placeholder">
+                                            <label for="author">Họ tên</label>
+                                            <input class="form-control" id="author" name="author" type="text" value=""
+                                                size="30" maxlength="245" aria-required="true" required="required"
+                                                placeholder="Họ tên">
+                                        </p>
+                                        <p class="comment-form-email form-group has-placeholder">
+                                            <label for="email">Email </label>
+                                            <input class="form-control" id="email" name="email" type="email" value=""
+                                                size="30" maxlength="100" aria-required="true" required="required"
+                                                placeholder="Email">
+                                        </p>
+
+                                        <p class="comment-form-comment form-group has-placeholder">
+                                            <label for="comment">Nội dung</label>
+                                            <textarea class="form-control" id="comment" name="comment" cols="45"
+                                                rows="7" maxlength="65525" aria-required="true" required="required"
+                                                placeholder="Nội dung"></textarea>
+                                        </p>
+                                        <p class="form-submit">
+                                            <button type="button" class="btn btn-small btn-maincolor">Gửi</button>
+                                        </p>
+                                    </form>
+                                </div>
+                                <!-- #respond -->
+                                <ol class="comment-list">
+                                    <li class="comment">
+                                        <article class="comment-body">
+                                            <footer class="comment-meta">
+                                                <div class="comment-author vcard">
+                                                    <img alt="" src="images/blog/comment02.jpg">
+                                                </div>
+                                                <!-- .comment-author -->
+                                                <div class="comment-name d-block d-md-flex justify-content-between">
+                                                    <b class="fn">
+                                                        <a href="#" rel="nofollow" class="url fw-500">Nguyễn Văn A</a>
+                                                    </b>
+                                                    <div class="comment-metadata">
+                                                        <a href="#">
+                                                            <time datetime="2019-04-23T08:02:06+00:00">
+                                                                <i class="mr-1 fs-14 fa fa-clock-o color-main"></i>
+                                                                17 July 2024
+                                                            </time>
+                                                        </a>
+                                                    </div>
+                                                    <!-- .comment-metadata -->
+                                                </div>
+                                            </footer>
+                                            <!-- .comment-meta -->
+                                            <div class="comment-content">
+                                                <p>Bài viết tuyệt vời!</p>
+                                            </div>
+                                            <div class="reply">
+                                                <a rel="nofollow" class="fw-500" href="#comments" aria-label="Reply to John Doe">Trả lời</a>
+                                            </div>
+                                        </article>
+                                        <!-- .comment-body -->
+                                        <ol class="children">
+                                            <li class="comment">
+                                                <article class="comment-body">
+                                                    <footer class="comment-meta">
+                                                        <div class="comment-author vcard">
+                                                            <img alt="" src="images/blog/comment03.jpg">
+                                                        </div>
+                                                        <!-- .comment-author -->
+                                                        <div
+                                                            class="comment-name d-block d-md-flex justify-content-between">
+                                                            <b class="fn">
+                                                                <a href="#" rel="nofollow" class="url fw-500">David F.
+                                                                    Gibbs</a>
+                                                            </b>
+                                                            <div class="comment-metadata">
+                                                                <a href="#">
+                                                                    <time datetime="2019-04-23T08:02:06+00:00">
+                                                                        <i
+                                                                            class="mr-1 fs-14 fa fa-clock-o color-main"></i>
+                                                                        23 Apr 2019
+                                                                    </time>
+                                                                </a>
+                                                            </div>
+                                                            <!-- .comment-metadata -->
+                                                        </div>
+                                                    </footer>
+                                                    <!-- .comment-meta -->
+                                                    <div class="comment-content">
+                                                        <p>Bài viết tuyệt vời!</p>
+                                                    </div>
+                                                    <div class="reply">
+                                                        <a rel="nofollow" class="fw-500" href="#comments"
+                                                            aria-label="Reply to John Doe">Trả lời</a>
+                                                    </div>
+                                                </article>
+                                                <!-- .comment-body -->
+                                            </li>
+                                            <!-- #comment-## -->
+                                            <li class="comment">
+                                                <article class="comment-body">
+                                                    <footer class="comment-meta">
+                                                        <div class="comment-author vcard">
+                                                            <img alt="" src="images/blog/comment04.jpg">
+                                                        </div>
+                                                        <!-- .comment-author -->
+                                                        <div
+                                                            class="comment-name d-block d-md-flex justify-content-between">
+                                                            <b class="fn">
+                                                                <a href="#" rel="nofollow" class="url fw-500">Antonie D.
+                                                                    Malone</a>
+                                                            </b>
+                                                            <span class="comment-metadata d-block links-grey">
+                                                                <a href="#">
+                                                                    <time datetime="2019-04-23T08:02:06+00:00">
+                                                                        <i
+                                                                            class="mr-1 fs-14 fa fa-clock-o color-main"></i>
+                                                                        23 Apr 2019
+                                                                    </time>
+                                                                </a>
+                                                            </span>
+                                                            <!-- .comment-metadata -->
+                                                        </div>
+                                                    </footer>
+                                                    <!-- .comment-meta -->
+                                                    <div class="comment-content">
+                                                        <p>Bài viết tuyệt vời!</p>
+                                                    </div>
+                                                    <div class="reply">
+                                                        <a rel="nofollow" class="fw-500" href="#comments"
+                                                            aria-label="Reply to John Doe">Trả lời</a>
+                                                    </div>
+                                                </article>
+                                                <!-- .comment-body -->
+                                            </li>
+                                            <!-- #comment-## -->
+                                        </ol>
+                                        <!-- .children -->
+                                    </li>
+                                    <!-- #comment-## -->
+
+                                    <li class="comment">
+                                        <article class="comment-body">
+                                            <footer class="comment-meta">
+                                                <div class="comment-author vcard">
+                                                    <img alt="" src="images/blog/comment05.jpg">
+                                                </div>
+                                                <!-- .comment-author -->
+                                                <div class="comment-name d-block d-md-flex justify-content-between">
+                                                    <b class="fn">
+                                                        <a href="#" rel="nofollow" class="url fw-500">Delie J.
+                                                            Warren</a>
+                                                    </b>
+                                                    <span class="comment-metadata d-block links-grey">
+                                                        <a href="#">
+                                                            <time datetime="2019-04-23T08:02:06+00:00">
+                                                                <i class="mr-1 fs-14 fa fa-clock-o color-main"></i>
+                                                                23 Apr 2019
+                                                            </time>
+                                                        </a>
+                                                    </span>
+                                                    <!-- .comment-metadata -->
+                                                </div>
+                                            </footer>
+                                            <!-- .comment-meta -->
+                                            <div class="comment-content">
+                                                <p>Bài viết tuyệt vời!</p>
+                                            </div>
+                                            <div class="reply">
+                                                <a rel="nofollow" class="fw-500" href="#comments"
+                                                    aria-label="Reply to John Doe">Trả lời</a>
+                                            </div>
+                                        </article>
+                                        <!-- .comment-body -->
+                                    </li>
+                                    <!-- #comment-## -->
+                                </ol>
+                                <!-- .comment-list -->
+
+                            </div>
+
+                        </main>
+
+                        <aside class="col-lg-5 col-xl-4">
+                            <div class="bg-maincolor py-50 px-30 cs">
+                                <div class="widget widget_search">
+                                    <h5 class="widget-title">Tìm kiếm</h5>
+                                    <form role="search" method="get" class="search-form" action="/">
+                                        <label for="search-form-widget">
+                                            <span class="screen-reader-text">Search for:</span>
+                                        </label>
+                                        <input type="search" id="search-form-widget" class="search-field"
+                                            placeholder="Tìm kiếm" value="" name="search">
+                                        <button type="submit" class="search-submit">
+                                            <span class="screen-reader-text">Tìm</span>
+                                        </button>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <div class="widget widget_categories">
+                                <h5 class="widget-title">Danh mục</h5>
+                                <ul class="product-categories">
+                                    <li class="cat-item cat-parent">
+                                        <a href="ao-chong-nong.html" class="active">Áo chống nóng EcoSpeed</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="may-van-oc-makita-tw03501.html">Máy vặn ốc Makita TW0350</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="tay-gian-cot-cho.html">Tay giãn cốt chờ</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="thiet-bi-ket-hop-chai-khi2.html">Thiết bị kết hợp chai khí</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="choi-nam-cham.html">Chổi nam châm</a>
+                                    </li>
+
+                                    <li class="cat-item cat-parent">
+                                        <a href="sung-moi-lua1.html">Súng mồi lửa</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="ps-ring.html">PS Ring</a>
+                                    </li>
+
+                                    <li class="cat-item cat-parent">
+                                        <a href="kep-ap-luc-ecospeed.html">Kép áp lực EcoSpeed</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="may-cat-thep-vuong-goc1.html">Máy cắt thép vuông góc</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="thiet-bi-lam-am-khi-ecospeed.html">Thiết bị làm ấm khí EcoSpeed</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="van-chong-chay-nguoc-quickmag.html">Van chống cháy ngược Quickmag</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="day-hoi-dan-khi.html">Dây hơi dẫn khí</a>
+                                        <ul class="children">
+                                            <li class="cat-item cat-parent">
+                                                <a href="dau-noi-day-hoi-dan-khi.html">Đầu nỗi dây hơi dẫn khí</a>
+                                            </li>
+                                            <li class="cat-item cat-parent">
+                                                <a href="dau-noi-day-hoi-dan-khi-oxy.html">Đầu nối dây hơi dẫn khí
+                                                    Oxy</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="cat-item cat-parent">
+                                        <a href="dau-noi-day-hoi-dan-khi-ecospeed.html">Đầu nỗi dây hơi dẫn khí
+                                            Ecospeed</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="thiet-bi-gia-ap.html">Thiết bị gia áp</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="thiet-bi-gia-nhiet.html">Thiết bị gia nhiệt</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="dong-ho-dieu-ap.html">Đồng hồ điều áp</a>
+                                    </li>
+                                    <li class="cat-item cat-parent">
+                                        <a href="chai-khi1.html">Chai khí</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+
+                            <div class="widget widget_portfolio">
+                                <div class="portfolio">
+                                    <div class="photo">
+                                        <a href="gallery-single.html">
+                                            <img src="images/gallery/recent01.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="photo">
+                                        <a href="gallery-single.html">
+                                            <img src="images/gallery/recent03.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="photo">
+                                        <a href="gallery-single.html">
+                                            <img src="images/gallery/recent02.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="photo">
+                                        <a href="gallery-single.html">
+                                            <img src="images/gallery/recent04.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="widget widget_recent_posts">
+
+                                <h5 class="widget-title">Bài viết nỗi bật</h5>
+                                <ul class="list-unstyled">
+                                    <li class="media">
+                                        <a class="media-image" href="post-detail.html">
+                                            <img src="images/projects/12.jpg" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <p class="widget-post-title fw-400">
+                                                <a href="post-detail.html">Hàn EcoSpeed</a>
+                                            </p>
+                                            <p class="item-meta">
+                                                <i class="fa fa-clock-o color-main"></i>
+                                                2 min ago
+                                            </p>
+                                        </div>
+                                    </li>
+
+
+                                    <li class="media">
+                                        <a class="media-image" href="post-detail.html">
+                                            <img src="images/projects/5.jpg" alt="">
+                                        </a>
+                                        <div class="media-body">
+                                            <p class="widget-post-title fw-400">
+                                                <a href="post-detail.html">
+                                                    Bcons Construction Group
+                                                </a>
+                                            </p>
+                                            <p class="item-meta">
+                                                <i class="fa fa-clock-o color-main"></i>
+                                                5 min ago
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        <footer
+            class="page_footer text-md-left page_footer ds ms s-pt-60 s-pb-10 s-pt-lg-100 s-pb-lg-45 s-pt-xl-150 s-pb-xl-100 c-gutter-60">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 text-md-center text-lg-left animate" data-animation="fadeInUp">
+
+                        <div class="widget widget_bloginfo">
+                            <a href="./" class="logo">
+                                <img src="images/logo5.png" alt="">
+                            </a>
+                            <p>
+                                Công ty TNHH EcoSpeed Việt Nam (ESV) được thành lập tháng 1 năm 2017, là doanh
+                                nghiệp đầu tiên chuyển giao công nghệ và độc quyền phân phối công nghệ hàn EcoSpeed
+                                từ Nhật Bản tại Việt Nam.
+                            </p>
+                            <span class="social-icons">
+
+                                <a href="https://www.facebook.com/profile.php?id=100048729954906"
+                                    class="fa fa-facebook " title="facebook"></a>
+                                <a href="https://www.youtube.com/watch?v=iAF2ynN9gzg&t=5s" class="fa fa-youtube-play "
+                                    title="youtube-play"></a>
+                                <a href="https://www.youtube.com/watch?v=FT7VaJCNJJA&t=6s" class="fa fa-twitter "
+                                    title="twitter"></a>
+                                <a href="https://linkedin.com/" class="fa fa-linkedin " title="linkedin"></a>
+                                <a href="https://instagram.com/" class="fa fa-instagram " title="instagram"></a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 animate" data-animation="fadeInUp">
+                        <div class="widget widget_working_hours">
+                            <h3>
+                                <span class="color-main">Liên hệ</span>
+                            </h3>
+                            <ul class="list-bordered">
+
+                                <li>
+                                    <a href="contact.html#page_map">
+                                        <div class="icon-inline">
+                                            <i class="ico ico-map-marker color-main"></i>
+                                            <p>Số 9D7, KĐT mới Đại Kim, P.Đại Kim, Q.Hoàng Mai, TP.Hà Nội </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="callto:024-3858-2525 ">
+                                        <div class="icon-inline">
+                                            <i class="ico ico-phone color-main"></i>
+                                            <p>024-3858-2525 </p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="mailto:contact@ecospeed.vn">
+                                        <div class="icon-inline">
+                                            <i class="ico ico-envelope-alt color-main"></i>
+                                            <p>contact@ecospeed.vn</p>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 animate" data-animation="fadeInUp">
+                        <div class="widget widget_mailchimp">
+
+                            <h3 class="widget-title">
+                                <span class="color-main">Đăng ký</span>
+                            </h3>
+
+                            <p>
+                                Luôn cập nhật những tin tức mới nhất của chúng tôi. Chúng tôi cam kết không spam!
+                            </p>
+
+                            <form class="signup" action="/">
+                                <label for="mailchimp_email_text">
+                                    <span class="screen-reader-text">Đăng ký:</span>
+                                </label>
+
+                                <input id="mailchimp_email_text" name="email" type="email"
+                                    class="form-control mailchimp_email" placeholder="Your email">
+
+                                <button type="submit" class="search-submit">
+                                    <span class="screen-reader-text">Đăng ký</span>
+                                </button>
+                                <div class="response"></div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <section class="page_copyright ls s-py-20">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12 text-center animate" data-animation="fadeInUp">
+                        <p>&copy; COPYRIGHT 2024 ECOSPEED VIỆT NAM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div><!-- eof #box_wrapper -->
+    </div><!-- eof #canvas -->
+
+
+    <script src="js/compressed.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
