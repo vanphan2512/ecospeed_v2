@@ -14974,7 +14974,7 @@ span.muted-bg {
 	left: 0;
 	line-height: 1;
 	margin: 0;
-	opacity: 0.05;
+	opacity: 0.1;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -15698,7 +15698,7 @@ filters
 }
 
 .service-bg.s-overlay.ds.bs:before{
-	background-color: #f2c01461;
+	/* background-color: #f2c01461; */
 }
 
 .testimonials.s-overlay.ds.bs:before{
@@ -16169,8 +16169,15 @@ filters
 	color: #303849;
 }
 
+.blog{
+	background-image: url("../images/bg/background-pbg.png");
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .about{
-	background-image: url("../images/bg/background-grid.png");
+	background-image: url("../images/bg/background-pbg.png");
 	background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -16280,6 +16287,12 @@ aside > * + * {
 
 .page_footer .widget {
 	margin-bottom: 50px;
+}
+.page_footer .widget p {
+    color: #072056;
+}
+.page_footer .widget a.fa {
+    color: #303849;
 }
 
 .page_footer .widget > h3,
@@ -22608,7 +22621,12 @@ button.gm-ui-hover-effect {
 	margin-right: 5px;
 }
 footer.page_footer.ds.ms {
-    background-color: #971316db;
+	background-color: #dedede;
+    background-image: url(../images/bg/background-japan.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right top;
+
 }
 .page_footer {
 	overflow: hidden;
@@ -22641,6 +22659,7 @@ footer.page_footer.ds.ms {
 .page_footer .list-bordered li {
 	padding-bottom: 18px;
 	padding-top: 17px;
+	border-color: #0720566e;
 }
 
 .page_footer .list-bordered li i {
@@ -22650,7 +22669,9 @@ footer.page_footer.ds.ms {
 .page_footer .widget_mailchimp button {
 	padding: 27px 21px;
 }
-
+.page_footer .widget_mailchimp input.form-control {
+	border-color: #0720566e;
+}
 @media (min-width: 992px) {
 	.page_footer .widget_mailchimp input.form-control {
 		margin-top: 44px;
