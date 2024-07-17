@@ -9910,7 +9910,10 @@ body.boxed {
 
 /* dark background section - .ds.ms */
 .item-steps .ds.ms {
-	background-color: #f2c014bd;
+	background-image: url('../images/bg/background-line.png');
+	background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .ds.ms {
@@ -16047,20 +16050,36 @@ filters
 		padding-right: 35px;
 	}
 }
+.item-steps .step {
+    padding: 50px;
+}
 
-.steps2 .step p.step-title {
-	font-weight: 700;
+
+.item-steps .step p.step-title {
 	letter-spacing: 0.1em;
 	margin-bottom: 15px;
 	text-transform: uppercase;
+	font-weight: 500;
+    font-size: 25px;
+    padding-left: 20px;
 }
-.steps2 .step p.step-title.color-main{
-	color: #656971;
+.step p.step-title.color-main{
+    color: #3c4b75;
+ 
 }
 
+.step p.decs {
+    color: #1e2b50;
+	font-size: 18px;
+}
 .steps2 .step p.step-title:before {
 	top: -33px;
 }
+
+.item-steps .step:hover{
+	background-color: #65697078;
+}
+
 
 @media (min-width: 768px) {
 	.steps2 .step p.step-title:before {
@@ -16091,6 +16110,25 @@ filters
 
 .item-steps {
 	counter-reset: step;
+
+}
+
+.item-steps .step{
+    border-right: solid 1px #6b6e78;
+    border-bottom: solid 1px #6b6e78;
+}
+
+@media (max-width: 992px) {
+	.item-steps .step{
+		border-right: 0;
+	}
+	.item-steps .step:last-child{
+		border-bottom: 0;
+	}
+}
+
+.item-steps .step:nth-child(3n){
+	border-right: 0
 }
 
 .item-steps .step-part {
@@ -16107,6 +16145,9 @@ filters
 	}
 }
 
+.item-steps .step .step-part:before {
+	color: #dc8b8bf0;
+}
 .item-steps .step-part:before {
 	color: #fff;
 	content: "0" counter(step);
@@ -16126,6 +16167,13 @@ filters
 .ls.item-steps .step-part:before,
 .ls .item-steps .step-part:before {
 	color: #303849;
+}
+
+.about{
+	background-image: url("../images/bg/background-grid.png");
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 @media (max-width: 1199px) {
@@ -20353,7 +20401,7 @@ a img.aligncenter {
 }
 
 #canvas:not(.boxed) .header_absolute .page_header.affix-top {
-	background-color: transparent;
+	background-color: #766e6b78;
 }
 
 .header_absolute.home_header {
@@ -20493,7 +20541,7 @@ a img.aligncenter {
 	z-index: 1004;
 }
 .header_absolute .page_header_wrapper.affix-wrapper .ds.ms {
-	background-color: #d3252ac7;
+	background-color: #766e6b78;
 }
 
 /*header includes*/
