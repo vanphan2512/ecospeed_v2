@@ -6,6 +6,11 @@
 
 @import url("../css/icomoon.css");
 
+@font-face {
+	font-family: NotoSans;
+	src: url('../fonts/Noto_Sans_JP/NotoSansJP-VariableFont_wght.ttf');
+ }
+
 html {
 	height: 100%;
 	overflow: visible;
@@ -25,7 +30,7 @@ html {
 
 body {
 	background-color: #fff;
-	font-family: "Roboto", sans-serif;
+	font-family: "NotoSans", sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 24px;
@@ -41,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Anton", sans-serif;
+	font-family: "NotoSans", sans-serif;
 	-webkit-font-feature-settings: "lnum" 1;
 	font-feature-settings: "lnum" 1;
 	font-variant-numeric: lining-nums;
