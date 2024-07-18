@@ -15699,11 +15699,16 @@ filters
 }
 
 .service-bg {
-	background-image: url("../img/parallax/service-bg.jpg");
+	background-image: url("../images/banner/22.jpg");
 }
+/* 
+.services .shadow-heading {
+    opacity: .5;
+    color: #ffffff;
+} */
 
 .service-bg.s-overlay.ds.bs:before{
-	/* background-color: #f2c01461; */
+	background-color: #1a202ea1;
 }
 
 .testimonials.s-overlay.ds.bs:before{
@@ -15730,6 +15735,14 @@ filters
 	}
 }
 
+
+.contact.ls.ms {
+    background-color: #dee2eb;
+}
+
+.contact .cover-image {
+    background-size: contain;
+}
 /*
 ** Gallery Extension
 */
@@ -16168,6 +16181,23 @@ filters
 	transition: .5s all;
 	z-index: -1;
 }
+.about .item-steps .step-part:before {
+	color: #dc8b8bf0;
+}
+.about .step-count {
+	margin: 35px 0;
+}
+@media (max-width: 1440px) {
+	.about .step-count {
+    	margin: 25px 0;
+	}
+}
+.about .step-count h4, .about .step-count p {
+    padding-left: 20px;
+}
+.about .step-count p{
+	line-height: normal;
+}
 
 .ls.item-steps .step-part:before,
 .ls .item-steps .step-part:before {
@@ -16182,11 +16212,12 @@ filters
 }
 
 .about{
-	background-image: url("../images/bg/background-pbg.png");
-	background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-color: #f0f0f0;
 }
+.about .about-content{
+    padding-left: 50px;
+}
+
 
 @media (max-width: 1199px) {
 	.signature {
