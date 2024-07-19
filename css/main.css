@@ -15808,7 +15808,12 @@ filters
 		margin-top: 100px;
 	}
 }
-
+.about-detail.ls {
+    background-color: #f0f0f1;
+}
+.about-detail .images-wrap-item img {
+	box-shadow: none;
+}
 .images-wrap-item img {
 	box-shadow: 0 16px 20px 0px rgba(0, 0, 0, 0.15);
 }
@@ -22540,6 +22545,24 @@ img.absolute_image {
 .page_title.cover-background,
 .page_title.s-parallax {
 	background-image: url("../images/banner/slider-home.jpg");
+}
+.page_title.page_title_product {
+	background-image: url("../images/pro.png");
+	background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f2f2f2;
+}
+.page_title.page_title_product h1{
+	color: #3c4b75;
+}
+
+.page_title.page_title_product .breadcrumb > li a:not(.btn){
+	color: #3c4b75;
+}
+
+.page_title.page_title_product .breadcrumb > li a:not(.btn):hover{
+	color: #f2c014;
 }
 
 .header_absolute .page_topline.s-parallax:before {
