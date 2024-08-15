@@ -9403,10 +9403,7 @@ body.boxed {
 
 /*color background buttons*/
 .btn-maincolor {
-	background-image: -webkit-gradient(linear, left top, right top, from(#2af598), to(#009efd));
-    background-image: -webkit-linear-gradient(left, #2af598 0%, #009efd 100%);
-    background-image: linear-gradient(90deg, #2af598 0%, #009efd 100%);
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+	background-color: #5f89aa;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
     border: 0;
     color: #fff;
@@ -9415,8 +9412,8 @@ body.boxed {
 }
 
 .btn-maincolor:hover {
-	background-color: #303849;
-	border-color: #303849;
+	background-color: #41647f;
+	border-color: #41647f;
 	color: #fff;
 }
 
@@ -15370,6 +15367,10 @@ span.muted-bg {
 	background-image: url("../img/parallax/testimonials-bg.jpg");
 }
 
+.testimonials .color-main,.testimonials .special-heading{
+	color: #303849;
+}
+
 .testimonials-slider.owl-carousel .owl-nav {
 	right: 24.6%;
 	top: 62%;
@@ -15757,8 +15758,14 @@ filters
     background-size: contain;
 }
 .contact .color-main {
-	color: #29abe2;
+	color: #303849;
 }
+.contact .subheading {
+	color: #5c6162;
+}
+
+
+
 /*
 ** Gallery Extension
 */
@@ -15919,8 +15926,15 @@ filters
 }
 
 .gallery-tiled .color-main{
-	color: #29abe2;
+    color: #303849;
 }
+.gallery-tiled .big.special-heading{
+	color: #303849;
+}
+.gallery-tiled .subheading{
+	color: #5c6162;
+}
+
 
 .gallery-tiled .item-content.padding-small {
 	padding: 32px 30px 36px;
@@ -16115,7 +16129,7 @@ filters
     padding-left: 20px;
 }
 .step p.step-title.color-main{
-    color: #006cb4;
+    color: #5c6162;
  
 }
 
@@ -16203,7 +16217,7 @@ filters
 }
 
 .item-steps .step .step-part:before {
-	color: #257ab7c2;
+	color: #257ab752;
 }
 .item-steps .step-part:before {
 	color: #fff;
@@ -16235,10 +16249,10 @@ filters
     padding-left: 20px;
 }
 .about .step-count h4 {
-	color: #333;
+	color: #5c6162;
 }
 .about .step-count h4 .color-main{
-	color: #29abe2;
+	color: #5c6162;
 }
 .about .step-count p{
 	line-height: normal;
@@ -16258,8 +16272,10 @@ filters
 }
 
 .blog .color-main{
-	color: #29abe2;
+	color: #303849;
 }
+
+
 
 .about{
     background-color: #f0f0f0;
@@ -16270,7 +16286,12 @@ filters
 
 
 .about .about-content .special-heading .color-main{
-	color: #29ABE2;
+	color: #5c6162;
+}
+
+
+.about .about-content .subheading {
+	color: #5c6162;
 }
 
 @media (max-width: 1199px) {
