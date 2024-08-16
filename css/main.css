@@ -15721,6 +15721,10 @@ filters
     color: #ffffff;
 } */
 
+.services .subheading{
+	color: #bbb;
+}
+
 .service-bg.s-overlay.ds.bs:before{
 	background-color: #1a202ea1;
 }
@@ -16400,10 +16404,10 @@ aside > * + * {
 	margin-bottom: 50px;
 }
 .page_footer .widget p {
-    color: #072056;
+    color: #fff;
 }
 .page_footer .widget a.fa {
-    color: #303849;
+    color: #fff;
 }
 
 .page_footer .widget > h3,
@@ -16918,8 +16922,8 @@ widget_recent_entries
 }
 
 #box_wrapper > section.page_copyright{
-	background-color: #6a6e75bf;
-    color: #fff;
+	background-color: #a8a8a8;
+    color: #060606;
 }
 .page_copyright .widget_nav_menu li,
 .page_topline .widget_nav_menu li {
@@ -22768,23 +22772,18 @@ button.gm-ui-hover-effect {
 	margin-right: 5px;
 }
 footer.page_footer.ds.ms {
-	background-color: #fff;
-    background-image: url(../images/2.jfif);
+	background-color: #2b6286;
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: right top;
 	position: relative;
 
 }
-footer.page_footer.ds.ms:before {
-    content: "";
-    background-color: #62595963;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+
+footer.page_footer.ds .color-main{
+	color: #fff;
 }
+
 .page_footer {
 	overflow: hidden;
 }
@@ -22816,7 +22815,7 @@ footer.page_footer.ds.ms:before {
 .page_footer .list-bordered li {
 	padding-bottom: 18px;
 	padding-top: 17px;
-	border-color: #0720566e;
+	border-color: #969696;
 }
 
 .page_footer .list-bordered li i {
@@ -22826,8 +22825,11 @@ footer.page_footer.ds.ms:before {
 .page_footer .widget_mailchimp button {
 	padding: 27px 21px;
 }
+.page_footer .widget_mailchimp button::before{
+	color: #fff;
+}
 .page_footer .widget_mailchimp input.form-control {
-	border-color: #0720566e;
+	border-color: #969696;
 }
 @media (min-width: 992px) {
 	.page_footer .widget_mailchimp input.form-control {
